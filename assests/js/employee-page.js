@@ -11,7 +11,7 @@ function waitPageLoading() {
 }
 
 const fun = function() {
-    const response = fetch('https://mocki.io/v1/b46d73d7-48cc-415d-8cf4-2af19b5683ff', {
+    const response = fetch('https://mocki.io/v1/3daa852c-7643-44b5-b8dd-1cff8d7167b0', {
         method: "GET",
         headers: {
             'Content-type': 'application/json'

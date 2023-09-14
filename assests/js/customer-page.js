@@ -13,7 +13,7 @@ function waitPageLoading() {
 waitPageLoading();
 
 const post_quote = function() {
-    const response = fetch('https://mocki.io/v1/776038ea-54fc-421c-9d7c-541ad211d8ea', {
+    const response = fetch('https://mocki.io/v1/d3df09d8-3ba7-4f45-af35-4a2b0cac005f', {
         method: "GET",
         headers: {
             'Content-type': 'application/json'
@@ -58,7 +58,7 @@ Total Cost:${key.TotalCost}<br/></p></div>`
 }
 
 const post_order = function() {
-    const response = fetch('https://mocki.io/v1/776038ea-54fc-421c-9d7c-541ad211d8ea', {
+    const response = fetch('https://mocki.io/v1/0e908e4f-8446-40eb-8acd-10b6e63306cb', {
         method: "GET",
         headers: {
             'Content-type': 'application/json'

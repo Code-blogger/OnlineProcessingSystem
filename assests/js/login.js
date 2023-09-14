@@ -11,35 +11,41 @@ sign_in_btn.addEventListener("click", () => {
 });
 
 
-$("#search-icon").click(function() {
-    $(".nav").toggleClass("search");
-    $(".nav").toggleClass("no-search");
-    $(".search-input").toggleClass("search-active");
-});
-
-$('.menu-toggle').click(function() {
-    $(".nav").toggleClass("mobile-nav");
-    $(this).toggleClass("is-active");
+document.getElementById("Esubmit").addEventListener("submit", (e) => {
+    e.preventDefault();
+    let password = document.getElementById("Epassword").value;
+    let username = document.getElementById("Ename").value;
+    if (password === "1234" && username === "Ishika") {
+        window.location.href = "employee-page.html";
+    } else {
+        if (password === undefined || password === "") {
+            alert("Please Enter the Password");
+        } else {
+            if (username === undefined || username === "") {
+                alert("Please Enter the Username");
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        }
+    }
 });
 
 document.getElementById("Csubmit").addEventListener("submit", (e) => {
     e.preventDefault();
-    let password = document.getElementById("Cpassword");
-    let username = document.getElementById("Cname");
-    if (password == "1234" && username == "Ishika") {
-        window.location.href = "customer-page.html.html"
+    let password = document.getElementById("Cpassword").value;
+    let username = document.getElementById("Cname").value;
+    if (password === "1234" && username === "Ishika") {
+        window.location.href = "customer-page.html";
     } else {
-        alert("Invalid credentials. Please try again.");
-    }
-});
+        if (password === undefined || password === "") {
+            alert("Please Enter the Password");
+        } else {
+            if (username === undefined || username === "") {
+                alert("Please Enter the Username");
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        }
 
-document.getElementById("Esubmit").addEventListener("submit", (e) => {
-    e.preventDefault();
-    let password = document.getElementById("Epassword");
-    let username = document.getElementById("Ename");
-    if (password == "1234" && username == "Ishika") {
-        window.location.href = "customer-page.html.html"
-    } else {
-        alert("Invalid credentials. Please try again.");
     }
 });
